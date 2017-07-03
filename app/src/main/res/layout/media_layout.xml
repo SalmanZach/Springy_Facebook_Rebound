@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        android:src="@drawable/background"/>
+
+    <RelativeLayout
+        android:id="@+id/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        android:layout_marginTop="50dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="Enrique Iglesias - Tonight (I'm Lovin' You)"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/artist"
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#404040"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:text="Artist:  Enrique Iglesias"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:id="@+id/heart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_favorite_black_24dp"
+            android:layout_alignBaseline="@+id/title"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:visibility="invisible"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/artist">
+
+            <ImageView
+                android:id="@+id/forward"
+                app:srcCompat="@drawable/ic_fast_forward_black_24dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/play"
+                android:visibility="invisible"
+                />
+
+            <ImageView
+                android:id="@+id/rewind"
+                app:srcCompat="@drawable/ic_fast_rewind_black_24dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="50dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/play"
+                android:visibility="invisible"
+                />
+
+            <View
+                android:id="@+id/layer1"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_three"
+                android:visibility="invisible"
+                />
+            <View
+                android:id="@+id/layer2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_two"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/play"
+                app:srcCompat="@drawable/ic_play_arrow_black_24dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:background="@drawable/bg_one"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/repeat"
+                app:srcCompat="@drawable/ic_repeat"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_below="@+id/play"
+                android:visibility="invisible"
+                />
+            <ImageView
+                android:id="@+id/random"
+                app:srcCompat="@drawable/ic_random"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginRight="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/play"
+                android:visibility="invisible"
+                />
+
+            <View
+                android:id="@+id/music_bar"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/play"
+                android:layout_marginTop="45dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/music_bar"
+                android:visibility="invisible"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

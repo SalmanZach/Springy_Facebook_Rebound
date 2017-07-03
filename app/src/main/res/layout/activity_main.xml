@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CardViewStyle"
+    tools:context="com.zach.salman.springy.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/icon"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <android.support.v7.widget.CardView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardElevation="15dp"
+            android:visibility="invisible"
+            app:cardBackgroundColor="#f4473a">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recycler View"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardElevation="15dp"
+            app:cardBackgroundColor="#f4473a">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Music Player"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"/>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            app:cardElevation="15dp"
+            app:cardBackgroundColor="#f4473a">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logo"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#FFF"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Springy</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_logo">LogoActivity</string>
+</resources>
