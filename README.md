@@ -55,7 +55,15 @@ creat initialize SpringyAdapterAnimator in you Adapter Constructor.
            // set SpringyAdapterAnimationType
           springyAdapterAnimator.setSpringAnimationType(SpringyAdapterAnimationType.SLIDE_FROM_BOTTOM);
            // (optional) add Spring Config
-          springyAdapterAnimator.addConfig(85,15);                    
+          springyAdapterAnimator.addConfig(85,15);    
+          
+          // call this method in  onCreateViewHolder 
+                  springyAdapterAnimator.onSpringItemCreate(itemView);
+                  
+                  
+           // call this method in  onCreateViewHolder 
+                 springyAdapterAnimator.onSpringItemBind(holder.itemView, position);
+
 
 
 SpringyAdapterAnimation Types you can use.
