@@ -34,7 +34,7 @@ you can set Delay.
                     
                     iconSpring.setDelay(200);
                     
-Springy Animation Types you can use.
+SpringyAnimationTypes you can use.
 
     TRANSLATEX,
     TRANSLATEY,
@@ -46,14 +46,26 @@ Springy Animation Types you can use.
     ALPHA,
     ROTATION
     
+
+## Springy For RecyclerView.
+creat initialize SpringyAdapterAnimator in you Adapter Constructor.
     
-                    
-                    
+           // pass recyclerView in it.
+          springyAdapterAnimator = new SpringyAdapterAnimator(recyclerView);
+           // set SpringyAdapterAnimationType
+          springyAdapterAnimator.setSpringAnimationType(SpringyAdapterAnimationType.SLIDE_FROM_BOTTOM);
+           // (optional) add Spring Config
+          springyAdapterAnimator.addConfig(85,15);                    
 
-   
+
+SpringyAdapterAnimation Types you can use.
+
+    SLIDE_FROM_BOTTOM,
+    SLIDE_FROM_RIGHT,
+    SLIDE_FROM_LEFT,
+    SCALE
+    
 ![recylcer view](https://user-images.githubusercontent.com/11782272/27817252-c3d078b0-60ad-11e7-9cab-8a2ff4fe80c6.gif)
-
-
 
 
 
