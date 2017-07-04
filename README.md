@@ -11,16 +11,25 @@
 
 
 ## How to use
-     Create Springy Animator instance and you can initialize by one of it's two constructor 
-      
-    1.SpringyAnimator(SpringAnimationType.SCALEXY,TENSION, FRACTION, ANIMATION_START_VALUE, ANIMATION_END_VALUE);
+
+   Create Springy Animator instance and you can initialize by one of it's two constructor 
      
-    2.SpringyAnimator(SpringAnimationType.SCALEXY, ANIMATION_START_VALUE, ANIMATION_END_VALUE);
+     with Spring Config.
      
+     1.SpringyAnimator(SpringAnimationType.SCALEXY,TENSION, FRACTION, ANIMATION_START_VALUE, ANIMATION_END_VALUE); 
      
-        SpringyAnimator iconSpring = new SpringyAnimator(SpringAnimationType.SCALEXY, 4, 2.5, 0, 1);
-        iconSpring.setDelay(200);
-        iconSpring.startSpring(myView);
+     Without Spring Config.
+     
+     2.SpringyAnimator(SpringAnimationType.SCALEXY, ANIMATION_START_VALUE, ANIMATION_END_VALUE);
+     
+            {
+            
+            SpringyAnimator iconSpring = new SpringyAnimator(SpringAnimationType.SCALEXY, 4, 2.5, 0, 1);
+            iconSpring.setDelay(200);
+            iconSpring.startSpring(myView);
+      
+            }
+    
 
 ![recylcer view](https://user-images.githubusercontent.com/11782272/27817252-c3d078b0-60ad-11e7-9cab-8a2ff4fe80c6.gif)
 
