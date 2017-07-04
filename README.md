@@ -12,7 +12,7 @@
 
 ## How to use
 
-   Create Springy Animator instance and you can initialize by one of it's two constructor 
+   Create Springy Animator instance and you can initialize by one of it's two constructors. 
      
      with Spring Config.
      
@@ -25,12 +25,32 @@
             {
             
             SpringyAnimator iconSpring = new SpringyAnimator(SpringAnimationType.SCALEXY, 4, 2.5, 0, 1);
-            iconSpring.setDelay(200);
-            iconSpring.startSpring(myView);
-      
+            
+            // start spring with you view.            
+            iconSpring.startSpring(myView);      
             }
     
+you can set Delay.
+                    
+                    iconSpring.setDelay(200);
+                    
+Springy Animation Types you can use.
 
+    TRANSLATEX,
+    TRANSLATEY,
+    ROTATEX,
+    ROTATEY,
+    SCALEXY,
+    SCALEX,
+    SCALEY,
+    ALPHA,
+    ROTATION
+    
+    
+                    
+                    
+
+   
 ![recylcer view](https://user-images.githubusercontent.com/11782272/27817252-c3d078b0-60ad-11e7-9cab-8a2ff4fe80c6.gif)
 
 
