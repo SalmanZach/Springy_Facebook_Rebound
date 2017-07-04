@@ -61,7 +61,7 @@ creat initialize SpringyAdapterAnimator in you Adapter Constructor.
                   springyAdapterAnimator.onSpringItemCreate(itemView);
                   
                   
-           // call this method in  onCreateViewHolder 
+           // call this method in  onBindViewHolder 
                  springyAdapterAnimator.onSpringItemBind(holder.itemView, position);
 
 
