@@ -67,15 +67,24 @@ creat initialize SpringyAdapterAnimator in you Adapter Constructor.
 
 
 SpringyAdapterAnimation Types you can use.
+###    SLIDE_FROM_BOTTOM.
 
-    SLIDE_FROM_BOTTOM,
-    SLIDE_FROM_RIGHT,
-    SLIDE_FROM_LEFT,
-    SCALE
-    
-![recylcer view](https://user-images.githubusercontent.com/11782272/27817252-c3d078b0-60ad-11e7-9cab-8a2ff4fe80c6.gif)![scale](https://user-images.githubusercontent.com/11782272/27851936-9cb3b814-617a-11e7-9966-a21329704fad.gif)
-![from left](https://user-images.githubusercontent.com/11782272/27851937-9e793476-617a-11e7-9c85-192fd2f1f7e4.gif)
+![recylcer view](https://user-images.githubusercontent.com/11782272/27817252-c3d078b0-60ad-11e7-9cab-8a2ff4fe80c6.gif)!
+
+
+###    SLIDE_FROM_RIGHT.
 ![from right](https://user-images.githubusercontent.com/11782272/27851944-a056e4b4-617a-11e7-83b0-e137adf1a61a.gif)
+
+
+###    SLIDE_FROM_LEFT.
+
+![from left](https://user-images.githubusercontent.com/11782272/27851937-9e793476-617a-11e7-9c85-192fd2f1f7e4.gif)
+
+###    SCALE.
+
+![scale](https://user-images.githubusercontent.com/11782272/27851936-9cb3b814-617a-11e7-9966-a21329704fad.gif)
+
+    
 
 
 ## About Facebook Rebound
