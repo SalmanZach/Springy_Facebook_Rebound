@@ -12,7 +12,12 @@
 
 ## How to use
 
-   Create Springy Animator instance and you can initialize by one of it's two constructors. 
+First Need to add dependency in your Gradle.
+
+       Compile 'com.facebook.rebound:rebound:0.3.8' 
+      
+
+  Then Create Springy Animator instance and you can initialize by one of it's two constructors. 
      
      with Spring Config.
      
